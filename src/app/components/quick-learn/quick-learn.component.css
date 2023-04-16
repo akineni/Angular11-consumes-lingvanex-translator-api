@@ -1,0 +1,8 @@
+caption h4{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+caption {
+    caption-side: top;
+}

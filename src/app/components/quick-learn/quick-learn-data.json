@@ -1,0 +1,71 @@
+[
+    {
+      "caption": "Times",
+      "description": "This is a collection of the times of the day.",
+      "data": [
+        {
+          "word": "Early[ morning]",
+          "translation": "kutukutu",
+          "audio": "kutukutu"
+        },
+        {
+          "word": "Morning",
+          "translation": "owurọ",
+          "audio": "owurọ"
+        },
+        {
+          "word": "Afternoon",
+          "translation": "ọsan",
+          "audio": "ọsan"
+        },
+        {
+          "word": "Evening",
+          "translation": "irọlẹ",
+          "audio": "irọlẹ"
+        },
+        {
+          "word": "Night",
+          "translation": "alẹ",
+          "audio": "alẹ"
+        },
+        {
+          "word": "Midnight",
+          "translation": "ọganjọ",
+          "audio": "ọganjọ"
+        }
+        
+      ]
+    },
+    {
+      "caption": "Magic words",
+      "description": "Simple words used while interacting with others that potray good manners and leaves everyone with a pleasant feeling",
+      "data": [
+        {
+          "word": "Please",
+          "translation": "jọwọ",
+          "audio": "jọwọ"
+        },
+        {
+          "word": "Sorry",
+          "translation": "Ma binu",
+          "audio": "Ma_binu"
+        },
+        {
+          "word": "Thank you",
+          "translation": "Ese | Eseun",
+          "audio": "ese"
+        },
+        {
+          "word": "Excuse me",
+          "translation": "Gafara | Mo toro gafara",
+          "audio": "gafara"
+        },
+        {
+          "word": "pardon me",
+          "translation": "Dariji mi",
+          "audio": "dariji mi"
+        }
+        
+      ]
+    }
+]

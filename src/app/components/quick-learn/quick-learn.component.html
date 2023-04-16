@@ -1,0 +1,30 @@
+<div style="height: 60px;background-color: #003251;margin-bottom: 15px"></div>
+<div class="container">
+    <table class="table table-striped table-bordered table-hover"
+    *ngFor="let d of quickLearnData">
+        <caption class="text-center">
+          <h4>{{ d.caption }}</h4>
+          <span>{{ d.description }}</span>
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col" class="col-1">#</th>
+            <th scope="col" class="col-5">Words</th>
+            <th scope="col" class="col-5">Translation (English)</th>
+            <th scope="col" class="col-1 text-center">Audio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let dd of d.data; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ dd.word }}</td>
+            <td class="text-capitalize">{{ dd.translation }}</td>
+            <td class="text-center">
+              <a href="#" (click)="audioService.play(dd.audio, $event)">
+                <span class="icon-volume-up"></span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>

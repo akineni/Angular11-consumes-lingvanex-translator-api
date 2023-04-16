@@ -1,0 +1,37 @@
+<div style="height: 60px;background-color: #003251;margin-bottom: 15px"></div>
+<div class="container">
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <div class="form-group">
+            <label for="srcInput">Source Language</label>
+            <select class="form-control" id="srcInput" [(ngModel)]="feignedCacheService.srcInput" required
+            name="srcInput">
+              <option *ngFor="let l of languages" value="{{ l.full_code }}">{{ l.englishName }}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="targetInput">Target Language</label>
+            <select class="form-control" id="targetInput" [(ngModel)]="feignedCacheService.targetInput" required
+            name="targetInput" [disabled]="feignedCacheService.srcInput != 'yo_NG'">
+              <option *ngFor="let l of languages" value="{{ l.full_code }}">{{ l.englishName }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="dataInput">Text</label>
+        <textarea class="form-control" id="dataInput" aria-describedby="emailHelp" 
+        placeholder="Enter text" rows="7" [(ngModel)]="feignedCacheService.dataInput" name="dataInput" required></textarea> 
+        <small id="emailHelp" class="form-text text-muted">Could be a word or long text</small>
+      </div>
+      <div class="text-right"><button type="button" class="btn btn-primary" 
+          (click)="translate()" [disabled]="feignedCacheService.dataInput.length == 0">Translate</button>
+        </div>
+    </form>
+    <hr>
+    <h3 *ngIf="feignedCacheService.result" class="result"><span class="icon-volume-up"
+      style="opacity: .6;"></span> {{ feignedCacheService.result }}</h3>
+</div>
